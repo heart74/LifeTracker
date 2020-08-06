@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UIActivity">
+
+    <TextView
+        android:id="@+id/text_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This is TextView"
+        android:textColor="#9191D5"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Button 4"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type something here"
+        android:maxLines="2" />
+
+    <ImageView
+        android:id="@+id/image_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:outlineSpotShadowColor="#00ff00"/>
+
+</LinearLayout>
