@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UILayoutActivity">
+    <!--LinearLayout<EditText-->
+    <!--android:id="@+id/input_message"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button_5"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Button 5"-->
+    <!--android:layout_gravity="top"-->
+    <!--android:textAllCaps="false" />-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/button_6"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Button 6"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textAllCaps="false" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/button_7"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="bottom"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Button 7"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textAllCaps="false" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;RelativeLayout&ndash;&gt;-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/button_6"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="Button 6" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@id/button_6"-->
+        <!--android:layout_alignLeft="@id/button_6"-->
+        <!--android:text="Button 5" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_7"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@id/button_6"-->
+        <!--android:layout_toRightOf="@id/button_6"-->
+        <!--android:text="Button 7" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_8"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/button_6"-->
+        <!--android:layout_toLeftOf="@id/button_6"-->
+        <!--android:text="Button 8" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_9"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/button_6"-->
+        <!--android:layout_alignTop="@id/button_6"-->
+        <!--android:text="Button 9" />-->
+
+    <!--&lt;!&ndash;Framelayuout&ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="This is textview"-->
+        <!--android:layout_gravity="left"-->
+        <!--/>-->
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" -->
+        <!--android:layout_gravity="right"-->
+        <!--android:text="Button"-->
+        <!--/>-->
+    <!---->
+<!--PercentFrameLayout-->
+    <!--<Button-->
+        <!--android:id="@+id/button_5"-->
+        <!--android:text="Button"-->
+        <!--app:layout_widthPercent="50%"-->
+        <!--app:layout_heightPercent="50%"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_gravity="left|top"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/button_9"-->
+        <!--android:text="Button"-->
+        <!--app:layout_widthPercent="50%"-->
+        <!--app:layout_heightPercent="50%"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_gravity="right|top"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/button_7"-->
+        <!--android:text="Button"-->
+        <!--app:layout_widthPercent="7%"-->
+        <!--app:layout_heightPercent="50%"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_gravity="right|bottom"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/button_8"-->
+        <!--android:text="Button"-->
+        <!--app:layout_widthPercent="23%"-->
+        <!--app:layout_heightPercent="50%"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_gravity="left|bottom"/>-->
+    <!--引入布局-->
+<!--<include layout="@layout/title"/>-->
+    <com.xin.lifetracker.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
