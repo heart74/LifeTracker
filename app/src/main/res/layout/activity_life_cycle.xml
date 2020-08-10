@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".LifeCycleActivity">
 
     <Button
-        android:id="@+id/button_2"
+        android:id="@+id/start_normal_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button 2"
-        tools:ignore="MissingConstraints" />
+        android:text="Start NormalActivity"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <Button
-        android:id="@+id/force_offline"
+        android:id="@+id/start_dialog_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send force offline broadcast"
-        tools:ignore="MissingConstraints" />
+        android:text="Start DialogActivity"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
 </LinearLayout>

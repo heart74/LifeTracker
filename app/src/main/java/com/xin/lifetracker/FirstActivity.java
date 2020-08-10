@@ -3,6 +3,7 @@ package com.xin.lifetracker;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Lifecycle;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
@@ -60,8 +61,8 @@ public class FirstActivity extends BaseActivity {
 //                显式intent
 //                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
 //                隐式intent
-//                Intent intent = new Intent("com.example.activitytest.ACTION_START");
-//                intent.addCategory("com.example.activitytest.MY_CATEGORY");
+//                Intent intent = new Intent("com.xin.lifetracker.ACTION_START");
+//                intent.addCategory("com.xin.lifetracker.MY_CATEGORY");
 //                隐式intent打开网页
 //                Intent intent = new Intent(Intent.ACTION_VIEW);
 ////                setData接受一个Uri对象，指定当前intent正在操作的数据
@@ -78,7 +79,7 @@ public class FirstActivity extends BaseActivity {
 //                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
 //                startActivityForResult(intent, 1);
 //                活动的启动模式
-                Intent intent = new Intent(FirstActivity.this, UIBestActivity.class);
+                Intent intent = new Intent(FirstActivity.this, LoginActivity.class);
                 startActivity(intent);
 //                SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
             }

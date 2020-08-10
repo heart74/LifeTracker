@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.xin.lifetracker">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
@@ -12,7 +15,33 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".UIBestActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+
+        <receiver
+            android:name=".MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- 设置优先级，优先级较高的可以先收到广播，有序，可以被截断 -->
+            <!-- <intent-filter android:priority="100"> -->
+            <!-- <action android:name="com.xin.lifetracker.MY_BROADCAST" /> -->
+            <!-- </intent-filter> -->
+        </receiver> <!-- 静态的广播接收器在receiver注册 -->
+        <receiver
+            android:name=".BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".BroadcastActivity" />
+        <activity
+            android:name=".DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".LifeCycleActivity" />
+        <activity android:name=".UIBestActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".UILayoutActivity" />
@@ -32,10 +61,10 @@
             <intent-filter>
 
                 <!-- 隐式intent -->
-                <action android:name="com.example.activitytest.ACTION_START" />
+                <action android:name="com.xin.lifetracker.ACTION_START" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.example.activitytest.MY_CATEGORY" />
+                <category android:name="com.xin.lifetracker.MY_CATEGORY" />
             </intent-filter>
         </activity> <!-- 注册活动 -->
         <activity

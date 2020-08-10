@@ -19,10 +19,10 @@ public class SecondActivity extends BaseActivity {
         Log.d(TAG, "Task id is " + getTaskId());
         setContentView(R.layout.activity_second);
 //        接受来自firstactivity 传来的数据并打印log
-        Intent intent = getIntent();
-        String data = intent.getStringExtra("param1");
-        assert data != null;
-        Log.d(TAG, data);
+//        Intent intent = getIntent();
+//        String data = intent.getStringExtra("param1");
+//        assert data != null;
+//        Log.d(TAG, data);
 
 
         Button button2 = (Button) findViewById(R.id.button_2);
@@ -38,6 +38,15 @@ public class SecondActivity extends BaseActivity {
                 startActivity(intent);
 
 
+            }
+        });
+
+        Button forceOffline = (Button) findViewById(R.id.force_offline);
+        forceOffline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("com.xin.lifetracker.FORCE_OFFLINE");
+                sendBroadcast(intent);
             }
         });
     }
