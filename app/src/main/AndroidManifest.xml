@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
+        android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/avatar"
@@ -15,7 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LitePalActivity"></activity>
+        <activity android:name=".FilePersistenceActivity" />
+        <activity android:name=".LoginActivity" />
 
         <receiver
             android:name=".MyBroadcastReceiver"

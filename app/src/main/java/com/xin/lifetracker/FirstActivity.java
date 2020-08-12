@@ -79,7 +79,7 @@ public class FirstActivity extends BaseActivity {
 //                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
 //                startActivityForResult(intent, 1);
 //                活动的启动模式
-                Intent intent = new Intent(FirstActivity.this, LoginActivity.class);
+                Intent intent = new Intent(FirstActivity.this, LitePalActivity.class);
                 startActivity(intent);
 //                SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
             }
