@@ -81,7 +81,7 @@ public class FilePersistenceActivity extends AppCompatActivity {
         });
 
 //        创建数据库  新创建表时增加version
-        myDatabaseHelper = new MyDatabaseHelper(this, "BookStore.db", null, 2);
+        myDatabaseHelper = new MyDatabaseHelper(this, "BookStore.db", null, 1);
         Button createDatabase = (Button) findViewById(R.id.create_database);
         createDatabase.setOnClickListener(new View.OnClickListener() {
             @Override

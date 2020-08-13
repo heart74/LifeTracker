@@ -10,6 +10,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -79,7 +80,7 @@ public class FirstActivity extends BaseActivity {
 //                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
 //                startActivityForResult(intent, 1);
 //                活动的启动模式
-                Intent intent = new Intent(FirstActivity.this, LitePalActivity.class);
+                Intent intent = new Intent(FirstActivity.this, ProviderActivity.class);
                 startActivity(intent);
 //                SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
             }

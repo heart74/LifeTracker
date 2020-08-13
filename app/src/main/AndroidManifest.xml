@@ -4,7 +4,9 @@
     package="com.xin.lifetracker">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name="org.litepal.LitePalApplication"
@@ -16,7 +18,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LitePalActivity"></activity>
+        <activity android:name=".ProviderActivity"></activity>
+
+        <provider
+            android:name=".DatabaseProvider"
+            android:authorities="com.xin.lifetracker.provider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ContactsActivity" />
+        <activity android:name=".RuntimePermissionActivity" />
+        <activity android:name=".LitePalActivity" />
         <activity android:name=".FilePersistenceActivity" />
         <activity android:name=".LoginActivity" />
 
