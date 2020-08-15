@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name="org.litepal.LitePalApplication"
@@ -18,13 +19,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ProviderActivity"></activity>
+        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".CameraAlbumActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".ProviderActivity" />
 
         <provider
             android:name=".DatabaseProvider"
             android:authorities="com.xin.lifetracker.provider"
             android:enabled="true"
             android:exported="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.xin.lifetracker.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
         <activity android:name=".ContactsActivity" />
         <activity android:name=".RuntimePermissionActivity" />

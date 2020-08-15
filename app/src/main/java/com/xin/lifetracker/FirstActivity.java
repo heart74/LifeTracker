@@ -7,6 +7,7 @@ import androidx.lifecycle.Lifecycle;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
+import android.app.Notification;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -80,7 +81,7 @@ public class FirstActivity extends BaseActivity {
 //                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
 //                startActivityForResult(intent, 1);
 //                活动的启动模式
-                Intent intent = new Intent(FirstActivity.this, ProviderActivity.class);
+                Intent intent = new Intent(FirstActivity.this, CameraAlbumActivity.class);
                 startActivity(intent);
 //                SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
             }
