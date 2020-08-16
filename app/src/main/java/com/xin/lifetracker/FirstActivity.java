@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -81,7 +82,7 @@ public class FirstActivity extends BaseActivity {
 //                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
 //                startActivityForResult(intent, 1);
 //                活动的启动模式
-                Intent intent = new Intent(FirstActivity.this, CameraAlbumActivity.class);
+                Intent intent = new Intent(FirstActivity.this, WebViewActivity.class);
                 startActivity(intent);
 //                SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
             }
